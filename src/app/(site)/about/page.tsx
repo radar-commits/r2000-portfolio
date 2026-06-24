@@ -132,11 +132,9 @@ export default function AboutPage() {
             Let&apos;s make something together.
           </h2>
         </div>
-        <Button asChild size="lg" className="shrink-0 gap-2">
-          <Link href="/contact">
-            Get in touch
-            <ArrowUpRight className="size-4" />
-          </Link>
+        <Button render={<Link href="/contact" />} size="lg" className="shrink-0 gap-2">
+          Get in touch
+          <ArrowUpRight className="size-4" />
         </Button>
       </section>
     </main>
